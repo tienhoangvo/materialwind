@@ -1,18 +1,18 @@
 const plugin = require('tailwindcss/plugin')
 
 const material = plugin(
-  ({ addBase, addUtilities }) => {
-    // addBase({
-    //   ":root": {
-    //     "--md-source": "hsl(264, 67%, 35%)",
-    //     "--md-ref-palette-primary0": "0 0% 0%"
-    //   },
-    //   "@media (prefers-color-scheme: dark)": {
-    //     ":root": {
-    //       "--test": "blue"
-    //     }
-    //   }
-    // })
+  ({ addBase, addComponents, addUtilities }) => {
+    addBase({
+      html: {
+        fontFamily: "'Golos Text', sans-serif",
+      },
+    })
+
+    addComponents({
+      '.icon-filled': {
+        fontVariationSettings: "'FILL' 100",
+      },
+    })
 
     addUtilities({
       '.display-large': {
@@ -105,6 +105,9 @@ const material = plugin(
         lineHeight: '20px',
         letterSpacing: 0.10000000149011612,
       },
+      '.bg-surface-light-0': {
+        background: '#FFFBFF',
+      },
       '.bg-surface-light-1': {
         background:
           'linear-gradient(0deg, rgba(111, 70, 185, 0.05), rgba(111, 70, 185, 0.05)), #FFFBFF',
@@ -125,6 +128,9 @@ const material = plugin(
         background:
           'linear-gradient(0deg, rgba(111, 70, 185, 0.14), rgba(111, 70, 185, 0.14)), #FFFBFF',
       },
+      '.bg-surface-dark-0': {
+        background: '#1D1B1E',
+      },
       '.bg-surface-dark-1': {
         background:
           'linear-gradient(0deg, rgba(211, 187, 255, 0.05), rgba(211, 187, 255, 0.05)), #1D1B1E',
@@ -144,6 +150,9 @@ const material = plugin(
       '.bg-surface-dark-5': {
         background:
           'linear-gradient(0deg, rgba(211, 187, 255, 0.14), rgba(211, 187, 255, 0.14)), #1D1B1E',
+      },
+      '.bg-surface-none': {
+        background: 'none',
       },
     })
   },
@@ -304,7 +313,7 @@ const material = plugin(
             surfaceTint: '#6F46B9',
             outlineVariant: '#CBC4CF',
             scrim: '#000000',
-            disabled: '#1D1B1E'
+            disabled: '#1D1B1E',
           },
           dark: {
             primary: '#D3BBFF',
@@ -337,7 +346,7 @@ const material = plugin(
             surfaceTint: '#D3BBFF',
             outlineVariant: '#49454E',
             scrim: '#000000',
-            disabled: '#1D1B1E'
+            disabled: '#1D1B1E',
           },
         },
       },
@@ -363,10 +372,11 @@ const material = plugin(
           pressed: '0.12',
           dragged: '0.16',
           'disabled-content': '0.38',
-          'disabled-container': '0.12'
+          'disabled-container': '0.12',
         },
       },
     },
+    darkMode: 'class',
   }
 )
 

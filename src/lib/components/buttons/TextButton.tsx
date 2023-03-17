@@ -1,25 +1,26 @@
-import { clsx } from 'clsx'
+import clsx from 'clsx'
 import { ReactNode } from 'react'
 import Button, { ButtonProps } from './Button'
 
-export type ElevatedButtonProps = ButtonProps & {
+export type TextButtonProps = ButtonProps & {
   icon?: ReactNode
 }
 
-const ElevatedButton = ({ children, icon, ...rest }: ElevatedButtonProps) => {
+const TextButton = ({ icon, children, ...rest }: TextButtonProps) => {
   return (
     <Button
       className={clsx(
         'group',
-        'bg-surface-light-1 shadow-1 dark:bg-surface-dark-1',
-        'hover:bg-surface-light-2 hover:shadow-2 dark:hover:bg-surface-dark-2',
-        'focus:bg-surface-light-1 focus:shadow-1 dark:focus:bg-surface-dark-1'
+        'bg-[unset] dark:bg-[unset]',
+        'focus:shadow-[none]',
+        'px-4'
       )}
       {...rest}
     >
       <Button.StateLayer
         className={clsx(
-          'bg-schemes-light-primary dark:bg-schemes-dark-primary'
+          'bg-schemes-light-primary dark:bg-schemes-dark-primary',
+          'group-disabled:opacity-0 dark:group-disabled:opacity-0'
         )}
       />
       <Button.Content
@@ -34,4 +35,4 @@ const ElevatedButton = ({ children, icon, ...rest }: ElevatedButtonProps) => {
   )
 }
 
-export default ElevatedButton
+export default TextButton

@@ -5,7 +5,7 @@ export type ContentIconProps = HTMLAttributes<HTMLSpanElement> & {
 }
 
 const ContentIcon = ({ children }: ContentIconProps) => {
-  return <span className={clsx('ml-[-0.25rem] mr-2 text-[18px] leading-[1]')}>{children}</span>
+  return <span className={clsx(' inline-block ml-[-0.25rem] mr-2 h-[18px] w-[18px] leading-[1] [&>.material-symbols-rounded]:text-[18px]')}>{children}</span>
 }
 
 export default ContentIcon
