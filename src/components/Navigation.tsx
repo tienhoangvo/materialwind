@@ -59,7 +59,7 @@ const navigationData = [
   {
     id: -1,
     name: 'Root',
-    childIds: [0, 1]
+    childIds: [0, 4, 1]
   },
   {
     id: 0,
@@ -80,7 +80,12 @@ const navigationData = [
   {
     id: 3,
     name: 'Badge',
-    pathname: '/button',
+    pathname: '/badge',
+    childIds: [],
+  },
+  {
+    id: 4,
+    name: 'Styles',
     childIds: [],
   },
 ]

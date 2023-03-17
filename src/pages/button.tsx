@@ -15,7 +15,7 @@ const ButtonPage: NextPageWithLayout = () => {
         <title>Button</title>
       </Head>
       <article className="overflow-hidden grid] rounded-xl bg-surface-light-1 bg-opacity-hovered">
-        <header className="p-[52px_52px_70px] bg-primary-80 text-test bg-schemes-light-primary text-schemes-light-onPrimary">
+        <header className="p-[52px_52px_70px] bg-primary-80 text-test bg-surface-light-5 text-schemes-light-onSurface">
           <h1 className="display-large">Buttons</h1>
           <p className="body-medium">
             Buttons help people take actions, such as sending an email, sharing
@@ -23,7 +23,7 @@ const ButtonPage: NextPageWithLayout = () => {
           </p>
         </header>
         <section className="p-[70px] grid grid-cols-[repeat(auto-fit,_minmax(400px,_1fr))] gap-10">
-          <section className="light bg-[#fffbff] p-8 rounded-2xl text-[#1d1b1e] flex flex-col gap-8 rounded-lg">
+          <section className="light bg-schemes-light-surface p-8 rounded-2xl text-schemes-light-onSurface flex flex-col gap-8 rounded-lg">
             <h2 className="title-large">Light</h2>
             <section className="grid grid-cols-1 gap-3">
               <h3 className="title-medium">Elevated</h3>
@@ -106,7 +106,7 @@ const ButtonPage: NextPageWithLayout = () => {
               </menu>
             </section>
           </section>
-          <section className="dark border bg-[#1d1b1e] p-8 rounded-2xl text-[#fffbff] flex flex-col gap-8 rounded-lg">
+          <section className="dark bg-schemes-dark-surface p-8 rounded-2xl text-schemes-dark-onSurface flex flex-col gap-8 rounded-lg">
             <h2 className='title-large'>Dark</h2>
             <section className="grid grid-cols-1 gap-3">
               <h3 className="title-medium">Elevated</h3>

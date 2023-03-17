@@ -6,9 +6,9 @@ export type IconProps = HTMLAttributes<HTMLSpanElement> & {
   filled?: boolean
 }
 
-const Icon = ({ name, filled }: IconProps) => {
+const Icon = ({ name, filled, className, ...rest }: IconProps) => {
   return (
-    <span className={clsx('material-symbols-rounded', filled && 'icon-filled')}>
+    <span className={clsx('material-symbols-rounded', filled && 'icon-filled', className)} {...rest}>
       {name}
     </span>
   )
