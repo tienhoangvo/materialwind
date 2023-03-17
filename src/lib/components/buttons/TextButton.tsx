@@ -13,7 +13,7 @@ const TextButton = ({ icon, children, ...rest }: TextButtonProps) => {
         'group',
         'bg-[unset] dark:bg-[unset]',
         'focus:shadow-[none]',
-        'px-4'
+        'pr-4 pl-4'
       )}
       {...rest}
     >
