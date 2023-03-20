@@ -13,7 +13,8 @@ const StateLayer = ({ className, ...rest }: StateLayerProps) => {
         'group-hover:opacity-hovered',
         'group-focus:opacity-focused',
         'group-disabled:opacity-disabled-container group-disabled:bg-schemes-light-onSurface',
-        'dark:group-disabled:bg-schemes-dark-onSurface dark:group-disabled:opacity-disabled-container'
+        'dark:group-disabled:bg-schemes-dark-onSurface dark:group-disabled:opacity-disabled-container',
+        'transition duration-200'
       )}
       {...rest}
       aria-hidden

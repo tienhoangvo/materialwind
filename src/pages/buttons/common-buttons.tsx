@@ -1,12 +1,18 @@
+import ComponentContent from '@/components/ComponentContent'
+import ComponentContentTheme from '@/components/ComponentContentTheme'
+import ComponentHeader from '@/components/ComponentHeader'
+import ComponentLayout from '@/components/ComponentLayout'
 import Layout from '@/components/Layout'
-import { OutlinedButton, TextButton } from '@/lib/components/buttons'
-
-import ElevatedButton from '@/lib/components/buttons/ElevatedButton'
-import FilledButton from '@/lib/components/buttons/FilledButton'
-import FilledTonalButton from '@/lib/components/buttons/FilledTonalButton'
+import {
+  OutlinedButton,
+  TextButton,
+} from '@/lib/components/buttons/commonButtons'
+import ElevatedButton from '@/lib/components/buttons/commonButtons/ElevatedButton'
+import FilledButton from '@/lib/components/buttons/commonButtons/FilledButton'
+import FilledTonalButton from '@/lib/components/buttons/commonButtons/FilledTonalButton'
 import Icon from '@/lib/components/Icon'
 import Head from 'next/head'
-import { NextPageWithLayout } from './_app'
+import { NextPageWithLayout } from '../_app'
 
 const ButtonPage: NextPageWithLayout = () => {
   return (
@@ -14,17 +20,14 @@ const ButtonPage: NextPageWithLayout = () => {
       <Head>
         <title>Button</title>
       </Head>
-      <article className="overflow-hidden grid] rounded-xl bg-surface-light-1 bg-opacity-hovered">
-        <header className="p-[52px_52px_70px] bg-primary-80 text-test bg-surface-light-5 text-schemes-light-onSurface">
-          <h1 className="display-large">Buttons</h1>
-          <p className="body-medium">
-            Buttons help people take actions, such as sending an email, sharing
-            a document, or liking a comment
-          </p>
-        </header>
-        <section className="p-[70px] grid grid-cols-[repeat(auto-fit,_minmax(400px,_1fr))] gap-10">
-          <section className="light bg-schemes-light-surface p-8 rounded-2xl text-schemes-light-onSurface flex flex-col gap-8 rounded-lg">
-            <h2 className="title-large">Light</h2>
+      <ComponentLayout>
+        <ComponentHeader
+          heading="Buttons"
+          description="Buttons help people take actions, such as sending an email, sharing
+            a document, or liking a comment"
+        />
+        <ComponentContent>
+          <ComponentContentTheme theme="light">
             <section className="grid grid-cols-1 gap-3">
               <h3 className="title-medium">Elevated</h3>
               <menu className="flex gap-3 flex-wrap">
@@ -32,9 +35,16 @@ const ButtonPage: NextPageWithLayout = () => {
                 <ElevatedButton disabled>Disabled</ElevatedButton>
               </menu>
               <menu className="flex gap-3 flex-wrap">
-                <ElevatedButton icon={<Icon name='favorite'/>}>Enabled</ElevatedButton>
+                <ElevatedButton icon={<Icon name="favorite" />}>
+                  Enabled
+                </ElevatedButton>
                 <ElevatedButton
-                  icon={<Icon filled name="settings"/>}
+                  icon={
+                    <Icon
+                      filled
+                      name="settings"
+                    />
+                  }
                   disabled
                 >
                   Disabled
@@ -48,9 +58,23 @@ const ButtonPage: NextPageWithLayout = () => {
                 <FilledButton disabled>Disabled</FilledButton>
               </menu>
               <menu className="flex gap-3 flex-wrap">
-                <FilledButton icon={<Icon filled name="settings"/>}>Enabled</FilledButton>
                 <FilledButton
-                  icon={<Icon filled name="settings"/>}
+                  icon={
+                    <Icon
+                      filled
+                      name="settings"
+                    />
+                  }
+                >
+                  Enabled
+                </FilledButton>
+                <FilledButton
+                  icon={
+                    <Icon
+                      filled
+                      name="settings"
+                    />
+                  }
                   disabled
                 >
                   Disabled
@@ -64,9 +88,23 @@ const ButtonPage: NextPageWithLayout = () => {
                 <FilledTonalButton disabled>Disabled</FilledTonalButton>
               </menu>
               <menu className="flex gap-3 flex-wrap">
-                <FilledTonalButton icon={<Icon filled name="settings"/>}>Enabled</FilledTonalButton>
                 <FilledTonalButton
-                  icon={<Icon filled name="settings"/>}
+                  icon={
+                    <Icon
+                      filled
+                      name="settings"
+                    />
+                  }
+                >
+                  Enabled
+                </FilledTonalButton>
+                <FilledTonalButton
+                  icon={
+                    <Icon
+                      filled
+                      name="settings"
+                    />
+                  }
                   disabled
                 >
                   Disabled
@@ -80,9 +118,23 @@ const ButtonPage: NextPageWithLayout = () => {
                 <OutlinedButton disabled>Disabled</OutlinedButton>
               </menu>
               <menu className="flex gap-3 flex-wrap">
-                <OutlinedButton icon={<Icon filled name="settings"/>}>Enabled</OutlinedButton>
                 <OutlinedButton
-                  icon={<Icon filled name="settings"/>}
+                  icon={
+                    <Icon
+                      filled
+                      name="settings"
+                    />
+                  }
+                >
+                  Enabled
+                </OutlinedButton>
+                <OutlinedButton
+                  icon={
+                    <Icon
+                      filled
+                      name="settings"
+                    />
+                  }
                   disabled
                 >
                   Disabled
@@ -96,18 +148,31 @@ const ButtonPage: NextPageWithLayout = () => {
                 <TextButton disabled>Disabled</TextButton>
               </menu>
               <menu className="flex gap-3 flex-wrap">
-                <TextButton icon={<Icon filled name="settings"/>}>Enabled</TextButton>
                 <TextButton
-                  icon={<Icon filled name="settings"/>}
+                  icon={
+                    <Icon
+                      filled
+                      name="settings"
+                    />
+                  }
+                >
+                  Enabled
+                </TextButton>
+                <TextButton
+                  icon={
+                    <Icon
+                      filled
+                      name="settings"
+                    />
+                  }
                   disabled
                 >
                   Disabled
                 </TextButton>
               </menu>
             </section>
-          </section>
-          <section className="dark bg-schemes-dark-surface p-8 rounded-2xl text-schemes-dark-onSurface flex flex-col gap-8 rounded-lg">
-            <h2 className='title-large'>Dark</h2>
+          </ComponentContentTheme>
+          <ComponentContentTheme theme="dark">
             <section className="grid grid-cols-1 gap-3">
               <h3 className="title-medium">Elevated</h3>
               <menu className="flex gap-3 flex-wrap">
@@ -115,9 +180,16 @@ const ButtonPage: NextPageWithLayout = () => {
                 <ElevatedButton disabled>Disabled</ElevatedButton>
               </menu>
               <menu className="flex gap-3 flex-wrap">
-                <ElevatedButton icon={<Icon filled name="settings"/>}>Enabled</ElevatedButton>
+                <ElevatedButton icon={<Icon name="favorite" />}>
+                  Enabled
+                </ElevatedButton>
                 <ElevatedButton
-                  icon={<Icon filled name="settings"/>}
+                  icon={
+                    <Icon
+                      filled
+                      name="settings"
+                    />
+                  }
                   disabled
                 >
                   Disabled
@@ -131,9 +203,23 @@ const ButtonPage: NextPageWithLayout = () => {
                 <FilledButton disabled>Disabled</FilledButton>
               </menu>
               <menu className="flex gap-3 flex-wrap">
-                <FilledButton icon={<Icon filled name="settings"/>}>Enabled</FilledButton>
                 <FilledButton
-                  icon={<Icon filled name="settings"/>}
+                  icon={
+                    <Icon
+                      filled
+                      name="settings"
+                    />
+                  }
+                >
+                  Enabled
+                </FilledButton>
+                <FilledButton
+                  icon={
+                    <Icon
+                      filled
+                      name="settings"
+                    />
+                  }
                   disabled
                 >
                   Disabled
@@ -147,9 +233,23 @@ const ButtonPage: NextPageWithLayout = () => {
                 <FilledTonalButton disabled>Disabled</FilledTonalButton>
               </menu>
               <menu className="flex gap-3 flex-wrap">
-                <FilledTonalButton icon={<Icon filled name="settings"/>}>Enabled</FilledTonalButton>
                 <FilledTonalButton
-                  icon={<Icon filled name="settings"/>}
+                  icon={
+                    <Icon
+                      filled
+                      name="settings"
+                    />
+                  }
+                >
+                  Enabled
+                </FilledTonalButton>
+                <FilledTonalButton
+                  icon={
+                    <Icon
+                      filled
+                      name="settings"
+                    />
+                  }
                   disabled
                 >
                   Disabled
@@ -163,9 +263,23 @@ const ButtonPage: NextPageWithLayout = () => {
                 <OutlinedButton disabled>Disabled</OutlinedButton>
               </menu>
               <menu className="flex gap-3 flex-wrap">
-                <OutlinedButton icon={<Icon filled name="settings"/>}>Enabled</OutlinedButton>
                 <OutlinedButton
-                  icon={<Icon filled name="settings"/>}
+                  icon={
+                    <Icon
+                      filled
+                      name="settings"
+                    />
+                  }
+                >
+                  Enabled
+                </OutlinedButton>
+                <OutlinedButton
+                  icon={
+                    <Icon
+                      filled
+                      name="settings"
+                    />
+                  }
                   disabled
                 >
                   Disabled
@@ -179,18 +293,32 @@ const ButtonPage: NextPageWithLayout = () => {
                 <TextButton disabled>Disabled</TextButton>
               </menu>
               <menu className="flex gap-3 flex-wrap">
-                <TextButton icon={<Icon filled name="settings"/>}>Enabled</TextButton>
                 <TextButton
-                  icon={<Icon filled name="settings"/>}
+                  icon={
+                    <Icon
+                      filled
+                      name="settings"
+                    />
+                  }
+                >
+                  Enabled
+                </TextButton>
+                <TextButton
+                  icon={
+                    <Icon
+                      filled
+                      name="settings"
+                    />
+                  }
                   disabled
                 >
                   Disabled
                 </TextButton>
               </menu>
             </section>
-          </section>
-        </section>
-      </article>
+          </ComponentContentTheme>
+        </ComponentContent>
+      </ComponentLayout>
     </>
   )
 }

@@ -1,20 +1,18 @@
-import { HTMLAttributes, ReactNode } from 'react'
 import { clsx } from 'clsx'
+import { ButtonContent, type ButtonContentProps } from '../base'
 
-export type ContentProps = HTMLAttributes<HTMLDivElement> & {
-  children: ReactNode
-}
+export type ContentProps = ButtonContentProps
 const Content = ({ children, className }: ContentProps) => {
   return (
-    <div
+    <ButtonContent
       className={clsx(
-        'relative z-[1] flex items-center',
+        'flex items-center',
         className,
         'group-disabled:text-schemes-light-onSurface group-disabled:opacity-disabled-content dark:group-disabled:text-schemes-dark-onSurface'
       )}
     >
       {children}
-    </div>
+    </ButtonContent>
   )
 }
 export default Content

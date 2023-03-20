@@ -59,7 +59,7 @@ const navigationData = [
   {
     id: -1,
     name: 'Root',
-    childIds: [0, 4, 1]
+    childIds: [0, 1]
   },
   {
     id: 0,
@@ -69,23 +69,41 @@ const navigationData = [
   {
     id: 1,
     name: 'Components',
-    childIds: [2, 3],
+    childIds: [2],
   },
   {
     id: 2,
-    name: 'Button',
-    pathname: '/button',
-    childIds: [],
+    name: 'Buttons',
+    childIds: [3, 4, 5, 6, 7],
   },
   {
     id: 3,
-    name: 'Badge',
-    pathname: '/badge',
+    name: 'Common buttons',
+    pathname: '/buttons/common-buttons',
     childIds: [],
   },
   {
     id: 4,
-    name: 'Styles',
+    name: 'FAB',
+    pathname: '/buttons/fab',
+    childIds: [],
+  },
+  {
+    id: 5,
+    name: 'Extended FAB',
+    pathname: '/buttons/extended-fab',
+    childIds: [],
+  },
+  {
+    id: 6,
+    name: 'icon-buttons',
+    pathname: '/buttons/icon-buttons',
+    childIds: [],
+  },
+  {
+    id: 7,
+    name: 'Segmented buttons',
+    pathname: '/buttons/segmented-buttons',
     childIds: [],
   },
 ]
