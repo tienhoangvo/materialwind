@@ -65,9 +65,9 @@ const FAB = ({
       >
         <Button.Icon
           className={clsx(
-            size === 'medium' && 'h-6 text-2xl [&>*]:text-2xl',
-            size === 'large' && 'h-9 [&>*]:text-4xl',
-            size === 'small' && 'h-6 text-2xl [&>*]:text-2xl'
+            size === 'medium' && 'h-6 text-2xl [&>.material-symbols-rounded]:text-[24px]',
+            size === 'large' && 'h-9 [&>.material-symbols-rounded]:text-[36px]',
+            size === 'small' && 'h-6 text-2xl [&>.material-symbols-rounded]:text-[24px]'
           )}
         >
           {icon || children}
