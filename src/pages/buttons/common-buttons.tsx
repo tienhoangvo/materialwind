@@ -35,7 +35,7 @@ const ButtonPage: NextPageWithLayout = () => {
                 <ElevatedButton disabled>Disabled</ElevatedButton>
               </menu>
               <menu className="flex gap-3 flex-wrap">
-                <ElevatedButton icon={<Icon name="favorite" />}>
+                <ElevatedButton icon={<Icon name="settings" />}>
                   Enabled
                 </ElevatedButton>
                 <ElevatedButton
