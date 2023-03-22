@@ -1,6 +1,4 @@
 import type {
-  ButtonHTMLAttributes,
-  Ref,
   ReactNode,
 } from 'react'
 import { clsx } from 'clsx'
