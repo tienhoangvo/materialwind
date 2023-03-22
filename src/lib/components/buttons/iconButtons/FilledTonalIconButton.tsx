@@ -7,7 +7,6 @@ export type FilledTonalIconButtonProps = Omit<ButtonProps, 'children'> & {
   icon: ReactNode
   toggle?: 'selected' | 'unselected'
 }
-
 const FilledTonalIconButton = ({ icon, toggle, ...rest }: FilledTonalIconButtonProps) => {
   return (
     <Button

@@ -1,8 +1,10 @@
 import clsx from 'clsx'
-import { cloneElement, ReactElement, ReactNode } from 'react'
-import { IconProps } from '../../icon'
+import { cloneElement, HTMLAttributes, ReactElement, ReactNode } from 'react'
 import { Button, ButtonProps } from '../base'
-
+type IconProps = HTMLAttributes<HTMLSpanElement> & {
+  name: string
+  filled?: boolean
+}
 export type FilledIconButtonProps = Omit<ButtonProps, 'children'> & {
   icon: ReactNode
   toggle?: 'selected' | 'unselected'
