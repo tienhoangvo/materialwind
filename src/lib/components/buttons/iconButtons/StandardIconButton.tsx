@@ -1,6 +1,6 @@
 import clsx from 'clsx'
 import { cloneElement, ReactElement, ReactNode } from 'react'
-import { IconProps } from '../../icon/Icon'
+import type { IconProps } from '../../icon'
 import { Button, ButtonProps } from '../base'
 
 export type StandardIconButtonProps = Omit<ButtonProps, 'children'> & {

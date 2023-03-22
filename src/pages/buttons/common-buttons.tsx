@@ -8,9 +8,9 @@ import {
   TextButton,
   ElevatedButton,
   FilledButton,
-  FilledTonalButton
+  FilledTonalButton,
 } from '@/lib/components/buttons/commonButtons'
-import {Icon} from '@/lib/components'
+import { Icon } from '@/lib/components'
 import Head from 'next/head'
 import { NextPageWithLayout } from '../_app'
 
@@ -35,16 +35,11 @@ const ButtonPage: NextPageWithLayout = () => {
                 <ElevatedButton disabled>Disabled</ElevatedButton>
               </menu>
               <menu className="flex gap-3 flex-wrap">
-                <ElevatedButton icon={<Icon name="settings" />}>
+                <ElevatedButton icon={<Icon name="add" />}>
                   Enabled
                 </ElevatedButton>
                 <ElevatedButton
-                  icon={
-                    <Icon
-                      filled
-                      name="settings"
-                    />
-                  }
+                  icon={<Icon name="add" />}
                   disabled
                 >
                   Disabled
@@ -58,23 +53,9 @@ const ButtonPage: NextPageWithLayout = () => {
                 <FilledButton disabled>Disabled</FilledButton>
               </menu>
               <menu className="flex gap-3 flex-wrap">
+                <FilledButton icon={<Icon name="add" />}>Enabled</FilledButton>
                 <FilledButton
-                  icon={
-                    <Icon
-                      filled
-                      name="settings"
-                    />
-                  }
-                >
-                  Enabled
-                </FilledButton>
-                <FilledButton
-                  icon={
-                    <Icon
-                      filled
-                      name="settings"
-                    />
-                  }
+                  icon={<Icon name="add" />}
                   disabled
                 >
                   Disabled
@@ -88,23 +69,11 @@ const ButtonPage: NextPageWithLayout = () => {
                 <FilledTonalButton disabled>Disabled</FilledTonalButton>
               </menu>
               <menu className="flex gap-3 flex-wrap">
-                <FilledTonalButton
-                  icon={
-                    <Icon
-                      filled
-                      name="settings"
-                    />
-                  }
-                >
+                <FilledTonalButton icon={<Icon name="add" />}>
                   Enabled
                 </FilledTonalButton>
                 <FilledTonalButton
-                  icon={
-                    <Icon
-                      filled
-                      name="settings"
-                    />
-                  }
+                  icon={<Icon name="add" />}
                   disabled
                 >
                   Disabled
@@ -118,23 +87,11 @@ const ButtonPage: NextPageWithLayout = () => {
                 <OutlinedButton disabled>Disabled</OutlinedButton>
               </menu>
               <menu className="flex gap-3 flex-wrap">
-                <OutlinedButton
-                  icon={
-                    <Icon
-                      filled
-                      name="settings"
-                    />
-                  }
-                >
+                <OutlinedButton icon={<Icon name="add" />}>
                   Enabled
                 </OutlinedButton>
                 <OutlinedButton
-                  icon={
-                    <Icon
-                      filled
-                      name="settings"
-                    />
-                  }
+                  icon={<Icon name="add" />}
                   disabled
                 >
                   Disabled
@@ -148,23 +105,9 @@ const ButtonPage: NextPageWithLayout = () => {
                 <TextButton disabled>Disabled</TextButton>
               </menu>
               <menu className="flex gap-3 flex-wrap">
+                <TextButton icon={<Icon name="add" />}>Enabled</TextButton>
                 <TextButton
-                  icon={
-                    <Icon
-                      filled
-                      name="settings"
-                    />
-                  }
-                >
-                  Enabled
-                </TextButton>
-                <TextButton
-                  icon={
-                    <Icon
-                      filled
-                      name="settings"
-                    />
-                  }
+                  icon={<Icon name="add" />}
                   disabled
                 >
                   Disabled
@@ -184,12 +127,7 @@ const ButtonPage: NextPageWithLayout = () => {
                   Enabled
                 </ElevatedButton>
                 <ElevatedButton
-                  icon={
-                    <Icon
-                      filled
-                      name="settings"
-                    />
-                  }
+                  icon={<Icon name="add" />}
                   disabled
                 >
                   Disabled
@@ -203,23 +141,9 @@ const ButtonPage: NextPageWithLayout = () => {
                 <FilledButton disabled>Disabled</FilledButton>
               </menu>
               <menu className="flex gap-3 flex-wrap">
+                <FilledButton icon={<Icon name="add" />}>Enabled</FilledButton>
                 <FilledButton
-                  icon={
-                    <Icon
-                      filled
-                      name="settings"
-                    />
-                  }
-                >
-                  Enabled
-                </FilledButton>
-                <FilledButton
-                  icon={
-                    <Icon
-                      filled
-                      name="settings"
-                    />
-                  }
+                  icon={<Icon name="add" />}
                   disabled
                 >
                   Disabled
@@ -233,23 +157,11 @@ const ButtonPage: NextPageWithLayout = () => {
                 <FilledTonalButton disabled>Disabled</FilledTonalButton>
               </menu>
               <menu className="flex gap-3 flex-wrap">
-                <FilledTonalButton
-                  icon={
-                    <Icon
-                      filled
-                      name="settings"
-                    />
-                  }
-                >
+                <FilledTonalButton icon={<Icon name="add" />}>
                   Enabled
                 </FilledTonalButton>
                 <FilledTonalButton
-                  icon={
-                    <Icon
-                      filled
-                      name="settings"
-                    />
-                  }
+                  icon={<Icon name="add" />}
                   disabled
                 >
                   Disabled
@@ -263,23 +175,11 @@ const ButtonPage: NextPageWithLayout = () => {
                 <OutlinedButton disabled>Disabled</OutlinedButton>
               </menu>
               <menu className="flex gap-3 flex-wrap">
-                <OutlinedButton
-                  icon={
-                    <Icon
-                      filled
-                      name="settings"
-                    />
-                  }
-                >
+                <OutlinedButton icon={<Icon name="add" />}>
                   Enabled
                 </OutlinedButton>
                 <OutlinedButton
-                  icon={
-                    <Icon
-                      filled
-                      name="settings"
-                    />
-                  }
+                  icon={<Icon name="add" />}
                   disabled
                 >
                   Disabled
@@ -293,23 +193,9 @@ const ButtonPage: NextPageWithLayout = () => {
                 <TextButton disabled>Disabled</TextButton>
               </menu>
               <menu className="flex gap-3 flex-wrap">
+                <TextButton icon={<Icon name="add" />}>Enabled</TextButton>
                 <TextButton
-                  icon={
-                    <Icon
-                      filled
-                      name="settings"
-                    />
-                  }
-                >
-                  Enabled
-                </TextButton>
-                <TextButton
-                  icon={
-                    <Icon
-                      filled
-                      name="settings"
-                    />
-                  }
+                  icon={<Icon name="add" />}
                   disabled
                 >
                   Disabled
