@@ -3,13 +3,6 @@ import ComponentContentTheme from '@/components/ComponentContentTheme'
 import ComponentHeader from '@/components/ComponentHeader'
 import ComponentLayout from '@/components/ComponentLayout'
 import Layout from '@/components/Layout'
-import {
-  OutlinedButton,
-  TextButton,
-  ElevatedButton,
-  FilledButton,
-  FilledTonalButton,
-} from '@/lib/components/buttons/commonButtons'
 import { FilledIconButton, FilledTonalIconButton, Icon, OutlinedIconButton, StandardIconButton } from '@/lib/components'
 import Head from 'next/head'
 import { NextPageWithLayout } from '../_app'

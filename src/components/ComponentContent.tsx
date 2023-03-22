@@ -6,7 +6,7 @@ export type ComponentContentProps = {
 
 const ComponentContent = ({ children }: ComponentContentProps) => {
   return (
-    <section className="p-[70px] grid grid-cols-[repeat(auto-fit,_minmax(40%,_1fr))] gap-10">
+    <section className="p-[70px] grid grid-cols-[repeat(auto-fit,_minmax(45%,_1fr))] gap-10">
       {children}
     </section>
   )
