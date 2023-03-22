@@ -4,7 +4,7 @@ import ComponentHeader from '@/components/ComponentHeader'
 import ComponentLayout from '@/components/ComponentLayout'
 import Layout from '@/components/Layout'
 import { FAB, LargeFAB, SmallFAB } from '@/lib/components'
-import Icon from '@/lib/components/Icon'
+import {Icon} from '@/lib/components'
 
 import Head from 'next/head'
 import { NextPageWithLayout } from '../_app'

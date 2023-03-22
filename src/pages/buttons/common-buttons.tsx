@@ -6,11 +6,11 @@ import Layout from '@/components/Layout'
 import {
   OutlinedButton,
   TextButton,
+  ElevatedButton,
+  FilledButton,
+  FilledTonalButton
 } from '@/lib/components/buttons/commonButtons'
-import ElevatedButton from '@/lib/components/buttons/commonButtons/ElevatedButton'
-import FilledButton from '@/lib/components/buttons/commonButtons/FilledButton'
-import FilledTonalButton from '@/lib/components/buttons/commonButtons/FilledTonalButton'
-import Icon from '@/lib/components/Icon'
+import {Icon} from '@/lib/components'
 import Head from 'next/head'
 import { NextPageWithLayout } from '../_app'
 

@@ -1,5 +1,5 @@
 import Layout from "@/components/Layout"
-import Icon from "@/lib/components/Icon"
+import Icon from "@/lib/components/icon"
 import Head from "next/head"
 import { NextPageWithLayout } from "./_app"
 

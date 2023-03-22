@@ -1,1 +1,1 @@
-export { default as ExtendedFab } from './ExtendedFAB'
+export { default as ExtendedFAB } from './ExtendedFAB'

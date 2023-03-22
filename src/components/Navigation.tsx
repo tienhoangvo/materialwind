@@ -96,7 +96,7 @@ const navigationData = [
   },
   {
     id: 6,
-    name: 'icon-buttons',
+    name: 'Icon buttons',
     pathname: '/buttons/icon-buttons',
     childIds: [],
   },
