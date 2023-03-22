@@ -23,7 +23,7 @@ const IconButtonsPage: NextPageWithLayout = () => {
       <ComponentLayout>
         <ComponentHeader
           heading="Icon buttons"
-          description="Icon buttons help people take supplementary action with a single tab."
+          description="Icon buttons help people take supplementary actions with a single tab."
         />
         <ComponentContent>
           <ComponentContentTheme theme="light">
