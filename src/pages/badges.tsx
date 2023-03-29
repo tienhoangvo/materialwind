@@ -3,7 +3,7 @@ import ComponentContentTheme from '@/components/ComponentContentTheme'
 import ComponentHeader from '@/components/ComponentHeader'
 import ComponentLayout from '@/components/ComponentLayout'
 import Layout from '@/components/Layout'
-import { Icon, Badge } from '@/lib/components'
+import { Icon, Badge, TextButton } from '@/lib/components'
 import Head from 'next/head'
 import { NextPageWithLayout } from './_app'
 
@@ -31,7 +31,6 @@ const ButtonPage: NextPageWithLayout = () => {
                 <Badge label="99">
                   <Icon name="chat_bubble" />
                 </Badge>
-
                 <Badge label="999+">
                   <Icon name="chat_bubble" />
                 </Badge>
@@ -46,10 +45,31 @@ const ButtonPage: NextPageWithLayout = () => {
                 <Badge label="99">
                   <Icon name="notifications" />
                 </Badge>
-
                 <Badge label="999+">
                   <Icon name="notifications" />
                 </Badge>
+              </menu>
+              <menu className="flex gap-3 flex-wrap flex-col">
+                <li className='flex '>
+                  <TextButton>News</TextButton>
+                  <Badge />
+                </li>
+                <li className='flex '>
+                  <TextButton>News</TextButton>
+                  <Badge />
+                </li>
+                <li className='flex '>
+                  <TextButton>News</TextButton>
+                  <Badge label='9' />
+                </li>
+                <li className='flex '>
+                  <TextButton>News</TextButton>
+                  <Badge label='99' />
+                </li>
+                <li className='flex '>
+                  <TextButton>News</TextButton>
+                  <Badge label='999+' />
+                </li>
               </menu>
             </section>
           </ComponentContentTheme>
@@ -80,10 +100,31 @@ const ButtonPage: NextPageWithLayout = () => {
                 <Badge label="99">
                   <Icon name="notifications" />
                 </Badge>
-
                 <Badge label="999+">
                   <Icon name="notifications" />
                 </Badge>
+              </menu>
+              <menu className="flex gap-3 flex-wrap flex-col">
+                <li className='flex '>
+                  <TextButton>News</TextButton>
+                  <Badge />
+                </li>
+                <li className='flex '>
+                  <TextButton>News</TextButton>
+                  <Badge />
+                </li>
+                <li className='flex '>
+                  <TextButton>News</TextButton>
+                  <Badge label='9' />
+                </li>
+                <li className='flex '>
+                  <TextButton>News</TextButton>
+                  <Badge label='99' />
+                </li>
+                <li className='flex '>
+                  <TextButton>News</TextButton>
+                  <Badge label='999+' />
+                </li>
               </menu>
             </section>
           </ComponentContentTheme>

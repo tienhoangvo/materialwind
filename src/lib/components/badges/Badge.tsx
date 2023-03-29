@@ -3,7 +3,7 @@ import type { HTMLAttributes, ReactNode } from 'react'
 
 export type BadgeProps = HTMLAttributes<HTMLDivElement> & {
   label?: string
-  children: ReactNode
+  children?: ReactNode
 }
 
 const Badge = ({ label, children, ...rest }: BadgeProps) => {
@@ -15,7 +15,8 @@ const Badge = ({ label, children, ...rest }: BadgeProps) => {
       {children}
       <div
         className={clsx(
-          'rounded-full overflow-hidden absolute',
+          'rounded-full overflow-hidden',
+          children && 'absolute',
           !label && 'w-[6px] top-0 right-0 aspect-square',
           label && 'h-[16px] left-3 bottom-3 label-small px-1 text-center',
           label && label.length === 1 && 'aspect-square',
