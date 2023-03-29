@@ -1,4 +1,4 @@
-import Link from "next/link"
+import Link from 'next/link'
 
 const Navigation = () => {
   const root = navigationData[0]
@@ -21,7 +21,7 @@ const Navigation = () => {
 export type NavigationItem = {
   id: number
   name: string
-  childIds: number[],
+  childIds: number[]
   pathname?: string
 }
 
@@ -34,10 +34,8 @@ const NavigationList = ({ id, list }: NavigationListProps) => {
   const { childIds, name, pathname } = list.find(item => item.id === id)!
   return (
     <li>
-      {
-        pathname ? <Link href={pathname}>{name}</Link> : <div>{name}</div>
-      }
-      
+      {pathname ? <Link href={pathname}>{name}</Link> : <div>{name}</div>}
+
       {childIds.length > 0 && (
         <ul className="pl-3 text-sm font-medium">
           {childIds.map(id => (
@@ -59,7 +57,7 @@ const navigationData = [
   {
     id: -1,
     name: 'Root',
-    childIds: [0, 1]
+    childIds: [0, 1],
   },
   {
     id: 0,
@@ -69,7 +67,7 @@ const navigationData = [
   {
     id: 1,
     name: 'Components',
-    childIds: [2],
+    childIds: [8, 2],
   },
   {
     id: 2,
@@ -104,6 +102,12 @@ const navigationData = [
     id: 7,
     name: 'Segmented buttons',
     pathname: '/buttons/segmented-buttons',
+    childIds: [],
+  },
+  {
+    id: 8,
+    name: 'Badges',
+    pathname: '/badges',
     childIds: [],
   },
 ]

@@ -1,0 +1,98 @@
+import ComponentContent from '@/components/ComponentContent'
+import ComponentContentTheme from '@/components/ComponentContentTheme'
+import ComponentHeader from '@/components/ComponentHeader'
+import ComponentLayout from '@/components/ComponentLayout'
+import Layout from '@/components/Layout'
+import { Icon, Badge } from '@/lib/components'
+import Head from 'next/head'
+import { NextPageWithLayout } from './_app'
+
+const ButtonPage: NextPageWithLayout = () => {
+  return (
+    <>
+      <Head>
+        <title>Badges</title>
+      </Head>
+      <ComponentLayout>
+        <ComponentHeader
+          heading="Badges"
+          description="Badges convey dynamic information, such as counts or status. A badge can include labels or numbers."
+        />
+        <ComponentContent>
+          <ComponentContentTheme theme="light">
+            <section className="grid grid-cols-1 gap-3">
+              <menu className="flex gap-3 flex-wrap">
+                <Badge>
+                  <Icon name="chat_bubble" />
+                </Badge>
+                <Badge label="1">
+                  <Icon name="chat_bubble" />
+                </Badge>
+                <Badge label="99">
+                  <Icon name="chat_bubble" />
+                </Badge>
+
+                <Badge label="999+">
+                  <Icon name="chat_bubble" />
+                </Badge>
+              </menu>
+              <menu className="flex gap-3 flex-wrap">
+                <Badge>
+                  <Icon name="notifications" />
+                </Badge>
+                <Badge label="1">
+                  <Icon name="notifications" />
+                </Badge>
+                <Badge label="99">
+                  <Icon name="notifications" />
+                </Badge>
+
+                <Badge label="999+">
+                  <Icon name="notifications" />
+                </Badge>
+              </menu>
+            </section>
+          </ComponentContentTheme>
+          <ComponentContentTheme theme="dark">
+            <section className="grid grid-cols-1 gap-3">
+              <menu className="flex gap-3 flex-wrap">
+                <Badge>
+                  <Icon name="chat_bubble" />
+                </Badge>
+                <Badge label="1">
+                  <Icon name="chat_bubble" />
+                </Badge>
+                <Badge label="99">
+                  <Icon name="chat_bubble" />
+                </Badge>
+
+                <Badge label="999+">
+                  <Icon name="chat_bubble" />
+                </Badge>
+              </menu>
+              <menu className="flex gap-3 flex-wrap">
+                <Badge>
+                  <Icon name="notifications" />
+                </Badge>
+                <Badge label="1">
+                  <Icon name="notifications" />
+                </Badge>
+                <Badge label="99">
+                  <Icon name="notifications" />
+                </Badge>
+
+                <Badge label="999+">
+                  <Icon name="notifications" />
+                </Badge>
+              </menu>
+            </section>
+          </ComponentContentTheme>
+        </ComponentContent>
+      </ComponentLayout>
+    </>
+  )
+}
+
+ButtonPage.getLayout = page => <Layout>{page}</Layout>
+
+export default ButtonPage
