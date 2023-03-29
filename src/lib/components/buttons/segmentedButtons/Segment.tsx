@@ -51,7 +51,7 @@ const Segment = ({
           </Button.Icon>
         )}
 
-        <Button.Lable className={clsx('label-large')}>{children}</Button.Lable>
+        <Button.Label className={clsx('label-large')}>{children}</Button.Label>
       </Button.Content>
     </Button>
   )

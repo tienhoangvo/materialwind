@@ -7,7 +7,7 @@ import { Icon, Badge, TextButton } from '@/lib/components'
 import Head from 'next/head'
 import { NextPageWithLayout } from './_app'
 
-const ButtonPage: NextPageWithLayout = () => {
+const BadgesPage: NextPageWithLayout = () => {
   return (
     <>
       <Head>
@@ -134,6 +134,6 @@ const ButtonPage: NextPageWithLayout = () => {
   )
 }
 
-ButtonPage.getLayout = page => <Layout>{page}</Layout>
+BadgesPage.getLayout = page => <Layout>{page}</Layout>
 
-export default ButtonPage
+export default BadgesPage

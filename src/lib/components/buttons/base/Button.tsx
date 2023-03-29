@@ -25,6 +25,6 @@ Button.StateLayer = ButtonStateLayer
 
 Button.Icon = ButtonIcon
 
-Button.Lable = ButtonLabel
+Button.Label = ButtonLabel
 
 export default Button

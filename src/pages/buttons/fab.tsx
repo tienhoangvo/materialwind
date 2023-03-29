@@ -24,26 +24,26 @@ const FABPage: NextPageWithLayout = () => {
           <ComponentContentTheme theme="light">
             <section className="grid grid-cols-1 gap-3">
               <h3 className="title-medium">FAB</h3>
-              <menu className="flex gap-3 flex-wrap flex-col">
-                <li>
+              <menu className="flex gap-4 flex-wrap flex-col">
+                <li className='flex gap-2 flex-col items-start'>
                   <strong className="title-small">primary</strong>
                   <FAB icon={<Icon name="edit" />} />
                 </li>
-                <li>
+                <li className='flex gap-2 flex-col items-start'>
                   <strong className="title-small">secondary</strong>
                   <FAB
                     icon={<Icon name="edit" />}
                     color="secondary"
                   />
                 </li>
-                <li>
+                <li className='flex gap-2 flex-col items-start'>
                   <strong className="title-small">tertiary</strong>
                   <FAB
                     icon={<Icon name="edit" />}
                     color="tertiary"
                   />
                 </li>
-                <li>
+                <li className='flex gap-2 flex-col items-start'>
                   <strong className="title-small">surface</strong>
                   <FAB
                     icon={<Icon name="edit" />}
@@ -57,25 +57,25 @@ const FABPage: NextPageWithLayout = () => {
             <section className="grid grid-cols-1 gap-3">
               <h3 className="title-medium">FABs</h3>
               <menu className="flex gap-3 flex-col">
-                <li>
+                <li className='flex gap-2 flex-col items-start'>
                   <strong className="title-small">primary</strong>
                   <FAB icon={<Icon name="edit" />} />
                 </li>
-                <li>
+                <li className='flex gap-2 flex-col items-start'>
                   <strong className="title-small">secondary</strong>
                   <FAB
                     icon={<Icon name="edit" />}
                     color="secondary"
                   />
                 </li>
-                <li>
+                <li className='flex gap-2 flex-col items-start'>
                   <strong className="title-small">tertiary</strong>
                   <FAB
                     icon={<Icon name="edit" />}
                     color="tertiary"
                   />
                 </li>
-                <li>
+                <li className='flex gap-2 flex-col items-start'>
                   <strong className="title-small">surface</strong>
                   <FAB
                     icon={<Icon name="edit" />}
@@ -88,26 +88,26 @@ const FABPage: NextPageWithLayout = () => {
           <ComponentContentTheme theme="light">
             <section className="grid grid-cols-1 gap-3">
               <h3 className="title-medium">Large FABs</h3>
-              <menu className="flex gap-3 flex-wrap flex-col">
-                <li>
+              <menu className="flex gap-4 flex-wrap flex-col">
+                <li className='flex gap-2 flex-col items-start'>
                   <strong className="title-small">primary</strong>
                   <LargeFAB icon={<Icon name="edit" />} />
                 </li>
-                <li>
+                <li className='flex gap-2 flex-col items-start'>
                   <strong className="title-small">secondary</strong>
                   <LargeFAB
                     icon={<Icon name="edit" />}
                     color="secondary"
                   />
                 </li>
-                <li>
+                <li className='flex gap-2 flex-col items-start'>
                   <strong className="title-small">tertiary</strong>
                   <LargeFAB
                     icon={<Icon name="edit" />}
                     color="tertiary"
                   />
                 </li>
-                <li>
+                <li className='flex gap-2 flex-col items-start'>
                   <strong className="title-small">surface</strong>
                   <LargeFAB
                     icon={<Icon name="edit" />}
@@ -120,26 +120,26 @@ const FABPage: NextPageWithLayout = () => {
           <ComponentContentTheme theme="dark">
             <section className="grid grid-cols-1 gap-3">
             <h3 className="title-medium">Large FABs</h3>
-              <menu className="flex gap-3 flex-wrap flex-col">
-                <li>
+              <menu className="flex gap-4 flex-wrap flex-col">
+                <li className='flex gap-2 flex-col items-start'>
                   <strong className="title-small">primary</strong>
                   <LargeFAB icon={<Icon name="edit" />} />
                 </li>
-                <li>
+                <li className='flex gap-2 flex-col items-start'>
                   <strong className="title-small">secondary</strong>
                   <LargeFAB
                     icon={<Icon name="edit" />}
                     color="secondary"
                   />
                 </li>
-                <li>
+                <li className='flex gap-2 flex-col items-start'>
                   <strong className="title-small">tertiary</strong>
                   <LargeFAB
                     icon={<Icon name="edit" />}
                     color="tertiary"
                   />
                 </li>
-                <li>
+                <li className='flex gap-2 flex-col items-start'>
                   <strong className="title-small">surface</strong>
                   <LargeFAB
                     icon={<Icon name="edit" />}
@@ -153,26 +153,26 @@ const FABPage: NextPageWithLayout = () => {
           <ComponentContentTheme theme="light">
             <section className="grid grid-cols-1 gap-3">
               <h3 className="title-medium">Small FABs</h3>
-              <menu className="flex gap-3 flex-wrap flex-col">
-                <li>
+              <menu className="flex gap-4 flex-wrap flex-col">
+                <li className='flex gap-2 flex-col items-start'>
                   <strong className="title-small">primary</strong>
                   <SmallFAB icon={<Icon name="edit" />} />
                 </li>
-                <li>
+                <li className='flex gap-2 flex-col items-start'>
                   <strong className="title-small">secondary</strong>
                   <SmallFAB
                     icon={<Icon name="edit" />}
                     color="secondary"
                   />
                 </li>
-                <li>
+                <li className='flex gap-2 flex-col items-start'>
                   <strong className="title-small">tertiary</strong>
                   <SmallFAB
                     icon={<Icon name="edit" />}
                     color="tertiary"
                   />
                 </li>
-                <li>
+                <li className='flex gap-2 flex-col items-start'>
                   <strong className="title-small">surface</strong>
                   <SmallFAB
                     icon={<Icon name="edit" />}
@@ -185,26 +185,26 @@ const FABPage: NextPageWithLayout = () => {
           <ComponentContentTheme theme="dark">
             <section className="grid grid-cols-1 gap-3">
             <h3 className="title-medium">Small FABs</h3>
-              <menu className="flex gap-3 flex-wrap flex-col">
-                <li>
+              <menu className="flex gap-4 flex-wrap flex-col">
+                <li className='flex gap-2 flex-col items-start'>
                   <strong className="title-small">primary</strong>
                   <SmallFAB icon={<Icon name="edit" />} />
                 </li>
-                <li>
+                <li className='flex gap-2 flex-col items-start'>
                   <strong className="title-small">secondary</strong>
                   <SmallFAB
                     icon={<Icon name="edit" />}
                     color="secondary"
                   />
                 </li>
-                <li>
+                <li className='flex gap-2 flex-col items-start'>
                   <strong className="title-small">tertiary</strong>
                   <SmallFAB
                     icon={<Icon name="edit" />}
                     color="tertiary"
                   />
                 </li>
-                <li>
+                <li className='flex gap-2 flex-col items-start'>
                   <strong className="title-small">surface</strong>
                   <SmallFAB
                     icon={<Icon name="edit" />}

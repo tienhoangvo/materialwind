@@ -67,7 +67,7 @@ const navigationData = [
   {
     id: 1,
     name: 'Components',
-    childIds: [8, 2],
+    childIds: [8, 2, 9],
   },
   {
     id: 2,
@@ -108,6 +108,12 @@ const navigationData = [
     id: 8,
     name: 'Badges',
     pathname: '/badges',
+    childIds: [],
+  },
+  {
+    id: 9,
+    name: 'Chips',
+    pathname: '/chips',
     childIds: [],
   },
 ]
